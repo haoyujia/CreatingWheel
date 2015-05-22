@@ -84,18 +84,22 @@ namespace CreatingWheel.IO
         /// <returns></returns>
         private static TimeSpan CalculatePeriod(String fileName)
         {
-            var lines = File.ReadLines(fileName).ToList();
-            var line1 = lines[0];
-
-            // Seven fields means it's day data
-            if (line1.Split(',').Length == 7)
+            if (fileName.Contains("1min"))
+            {
+                return TimeSpan.FromMinutes(1);
+            }
+            else if (fileName.Contains("5min"))
+            {
+                return TimeSpan.FromMinutes(5);
+            }
+            else if (fileName.Contains("Day"))
             {
                 return TimeSpan.FromDays(1);
             }
-
-            // Time diff between two lines is the period
-            var line2 = lines[1];
-            return Convert.ToDateTime(line2.Split(',')[1]) - Convert.ToDateTime(line1.Split(',')[1]);
+            else
+            {
+                throw new Exception(String.Format("Error in finding the period for {0}", fileName));
+            }
         }
 
         /// <summary>

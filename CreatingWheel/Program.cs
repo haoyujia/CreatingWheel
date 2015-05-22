@@ -16,7 +16,7 @@ namespace CreatingWheel
         /// <summary>
         /// Folder containing all the past data
         /// </summary>
-        static private String dataFolderName = @"F:\Data\1min";
+        static private String dataFolderName = @"F:\Data\Day\中金日线";
 
         /***************************************Main Program Starts Here*****************************************************/
         /// <summary>
@@ -27,7 +27,7 @@ namespace CreatingWheel
         {
             // Create table Index
             // This table has to exist and no re-creation is allowed
-            Database.DatabaseConnection.CreateCommodityIndexTable();
+            Database.ContractIndexTable.CreateContractIndexTable();
 
             // Traver the folder and find all data files
             var dataFileList = TraversDataFolder(dataFolderName);
@@ -51,7 +51,7 @@ namespace CreatingWheel
             var candleStickList = IO.Parser.ReadFile(file);
 
             // Save candle sticks into database
-            bool success = Database.DatabaseConnection.SaveCandleSticks(candleStickList);
+            bool success = Database.ContractTable.SaveCandleSticks(candleStickList);
             if (!success)
             {
                 throw new Exception(String.Format("Error: save data from file {0} failed", file));
