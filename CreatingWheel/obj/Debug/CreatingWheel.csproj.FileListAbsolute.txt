@@ -1,0 +1,9 @@
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\bin\Debug\CreatingWheel.exe.config
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\bin\Debug\CreatingWheel.exe
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\bin\Debug\CreatingWheel.pdb
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\obj\Debug\CreatingWheel.csprojResolveAssemblyReference.cache
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\obj\Debug\CreatingWheel.Properties.Resources.resources
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\obj\Debug\CreatingWheel.csproj.GenerateResource.Cache
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\obj\Debug\CreatingWheel.exe
+c:\users\haoyujia\documents\visual studio 2013\Projects\CreatingWheel\CreatingWheel\obj\Debug\CreatingWheel.pdb
+C:\Users\HAOYUJIA\Documents\Visual Studio 2013\Projects\CreatingWheel\CreatingWheel\obj\Debug\CreatingWheel.Form1.resources
